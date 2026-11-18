@@ -11,7 +11,7 @@ IF
 THEN
 	RESPONSE #100
 		DisplayString(Myself,27111) // There are words scratched into the rust of the pipe. The handwriting looks like that of a child:  No sacrifice will do But the blood of a friend, true. But guilt will leave its stain If you wish to have the blade  This verse sounds like the ravings of a madman.
-		DisplayString(Myself,~As you pour the blood of a friend into the pipe, the water turns crimson.~) 
+		DisplayString(Myself,~当你将友人的鲜血注入管道，水流瞬间化作一片猩红。~) 
 		CreateVisualEffectObject("ICMAGICH",Myself)
 		SetGlobal("PipeOrder","AR0404",3)
 END

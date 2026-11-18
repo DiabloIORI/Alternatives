@@ -1,4 +1,4 @@
-BACKUP ~alternatives/backup~ 
+BACKUP ~weidu_external/alternatives/backup~   
 //AUTHOR ~berelinde@gmail.com~ 
 SUPPORT ~https://www.gibberlings3.net/forums/forum/173-alternatives/~
 
@@ -32,25 +32,20 @@ ALWAYS
 	//END
 	/* no convertion */
 
-  LAF HANDLE_CHARSETS
+/*  LAF HANDLE_CHARSETS
     INT_VAR
       infer_charsets = 1
     STR_VAR
       tra_path = EVAL ~%MOD_FOLDER%~
       noconvert_array = alternatives_noconvert
       reload_array = alternatives_reload
-  END
+  END */
 END /* ALWAYS */
 
 AUTO_TRA ~alternatives/%s~
 
 LANGUAGE ~English~ ~english~ ~alternatives/english/setup-alternatives.tra~ 
-LANGUAGE ~Russian~ ~russian~ ~alternatives/russian/setup-alternatives.tra~
-LANGUAGE ~French~ ~french~ ~alternatives/french/setup-alternatives.tra~ 
-LANGUAGE ~German~ ~german~ ~alternatives/german/setup-alternatives.tra~ 
 LANGUAGE ~Simplified Chinese~ ~schinese~ ~alternatives/schinese/install.tra~ // 汉化：c4_angel 协助：武骧金星
-LANGUAGE ~Italian~ ~italian~ ~alternatives/italian/setup-alternatives.tra~
-LANGUAGE ~Polish~ ~polish~ ~alternatives/polish/setup-alternatives.tra~  
 
 
 BEGIN @1 
@@ -212,7 +207,7 @@ COPY_EXISTING ~rumar.cre~ ~override/b!mal.cre~
     WRITE_BYTE  0x30  ~24~       // leather color = 24 dark gold
     WRITE_BYTE  0x31  ~67~       // armor color   = 67 shiny gold
     WRITE_BYTE  0x32  ~75~       // hair color    = 75 pure black
-    SAY SELECT_COMMON1 ~I suppose I can extend you my hand, though I'll have to wash it after.~ [NOBMA01] 
+    SAY SELECT_COMMON1 ~盗亦有道。我倒是可以帮你一把，不过事后我得好好洗洗手。~ [NOBMA01] 
 
 COPY_EXISTING ~rumar.cre~ ~override/b!mal2.cre~
     SAY NAME1 @8
@@ -229,7 +224,7 @@ COPY_EXISTING ~rumar.cre~ ~override/b!mal2.cre~
     WRITE_BYTE  0x30  ~24~       // leather color = 24 dark gold
     WRITE_BYTE  0x31  ~67~       // armor color   = 67 shiny gold
     WRITE_BYTE  0x32  ~75~       // hair color    = 75 pure black
-    SAY SELECT_COMMON1 ~I suppose I can extend you my hand, though I'll have to wash it after.~ [NOBMA01] 
+    SAY SELECT_COMMON1 ~盗亦有道。我倒是可以帮你一把，不过事后我得好好洗洗手。~ [NOBMA01] 
   
 COPY_EXISTING ~gaelan.cre~ ~override/b!vhelon.cre~
     SAY NAME1 @15
